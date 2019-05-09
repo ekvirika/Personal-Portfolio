@@ -1,0 +1,36 @@
+
+@mixin grid__col-3 ($col: 1fr 1fr 1fr, $responsive: 1fr){
+    display: grid;
+    grid-template-columns: $col;
+    @media only screen and (max-width: 960px){
+        grid-template-columns: $responsive;
+    }
+}
+@mixin grid__col-2($col: 1fr 1fr, $responsive: 1fr){
+    display: grid;
+    grid-template-columns: $col;
+    @media only screen and (max-width: 960px){
+        grid-template-columns: $responsive;
+    }
+}
+@mixin list__inline{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+@mixin flex__space-between($flex: flex, $align: space-between, $wrap: wrap) {
+    display: $flex;
+    justify-content: $align;
+    flex-wrap: $wrap; 
+}
+@mixin flex__space-around($flex: flex, $align: space-around, $wrap: wrap) {
+    display: $flex;
+    justify-content: $align;
+    flex-wrap: $wrap;   
+}
+@mixin flex__centered($flex: flex, $align: center, $wrap: wrap) {
+    display: $flex;
+    justify-content: $align;
+    flex-wrap: $wrap;   
+}

@@ -1,0 +1,27 @@
+@import "colors";
+@import "mixins";
+@import "placeholders";
+@import "functions";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+image{
+    display: block;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+button{
+    cursor: pointer;
+}
