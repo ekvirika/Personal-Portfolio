@@ -1,0 +1,38 @@
+%header{
+    text-transform: uppercase;
+    color: color(accentLight);
+    font-family: 'Libre Baskerville', cursive;
+    line-height: 2em;
+    text-shadow: 0px 2px 2px rgba(189, 189, 189, 0.5);
+}
+%button--pink{
+    width: 140px;
+    height: 50px;
+    color: color(primary);
+    background: color(accentLight);
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    margin: 30px 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.8s;
+    &:hover{
+        @extend %button--grey;
+        border: 0.5px solid color(accentLight) !important;
+        background: transparent;
+        box-shadow: 0px 10px 15px  rgba(248, 197, 197, 0.5);
+        transform: scale(1.1);
+    }
+}
+%button--grey{
+    width: 140px;
+    height: 50px;
+    color: color(accentLight);
+    background: color(primary);
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    margin: 30px 0;
+
+}

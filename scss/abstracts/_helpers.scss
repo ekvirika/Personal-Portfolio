@@ -11,6 +11,10 @@
 
 body, html{
     height: 100%;
+    color: #949494;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5em;
 }
 .container{
     width: 80%;
@@ -24,4 +28,12 @@ image{
 }
 button{
     cursor: pointer;
+}
+h1{
+    font-size: 72px;
+    @extend %header;
+}
+h2{
+    @extend %header;
+    font-size: 48px;
 }

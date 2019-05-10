@@ -1,0 +1,15 @@
+@import "../abstracts/colors";
+@import "../abstracts/mixins";
+@import "../abstracts/placeholders";
+@import "../abstracts/functions";
+@import "../abstracts/helpers";
+
+@import "../components/buttons";
+
+#about{
+    color: color(primary);
+    background: linear-gradient(to top, color(primaryLight), color(primarySecond) );
+    .about--wrap{
+        @include grid__col-3;
+    }
+}
