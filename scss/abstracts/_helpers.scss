@@ -11,10 +11,11 @@
 
 body, html{
     height: 100%;
-    color: #949494;
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
+    color:color(primaryLight);
+    font-size: 18px ;
+    font-family: 'Quicksand', sans-serif !important;
     line-height: 1.5em;
+    font-weight: 500;
 }
 .container{
     width: 80%;
@@ -30,10 +31,18 @@ button{
     cursor: pointer;
 }
 h1{
-    font-size: 72px;
-    @extend %header;
+    font-size: 72px !important;
+    @extend %header ;
+    color: color(accentLight);
 }
 h2{
     @extend %header;
-    font-size: 48px;
+    font-size: 48px !important;
+    color: color(primarySecond);
+    margin: 60px 0;
+}
+h3{
+    @extend %header;
+    font-size: 32px;
+    color: color(primarySecond);
 }

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" >
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Libre+Baskerville|Nunito|Quicksand|Sofia" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
@@ -17,7 +18,7 @@
                 <div class="header__block--top">
                     <div class="header__top--wrap">
                         <div class="header__top--left">
-                            <ul class="social--area">
+                            <ul class="networks__list">
                                 <li class="list__item"><a href=""><abbr title="facebook"><i class="fab fa-facebook-f"></i></abbr></a></li>
                                 <li class="list__item"><a href=""><abbr title="instagram"><i class="fab fa-instagram"></i></abbr></a></li>
                                 <li class="list__item"><a href=""><abbr title="LinkedIn"><i class="fab fa-linkedin-in"></abbr></i></i></a></li>
@@ -48,16 +49,16 @@
                 </div> 
                 <div class="header__block--bottom">
                     <div class="header__bottom--left">
-                        <div class="bg">
+                        <div class="bg  ">
                             <span class="border--top"></span>
                             <span class="border--right"></span>
                             <span class="border--bottom"></span>
                             <span class="border--left"></span>
                         </div>
                     </div>
-                    <div class="header__bottom--right">
-                        <h1> E.K</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo eveniet qui adipisci expedita aliquam dolore dolores quisquam natus laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, deserunt?</p>
+                    <div class="header__bottom--right ">
+                        <h1 class="animated 1 fadeInRightBig delay-1.5s">  E.K</h1>
+                        <p class="animated 1 fadeInRightBig delay-1.5s">“ Code is like humor. When you have to explain it, it’s bad.”<br><br><span> - Cory House. </span></p>
                         <button type="button" class="header__button">hire me</button>
                     </div>  
                 </div>    
@@ -75,9 +76,202 @@
                         <button type="button" class="about__button">Download CIV</button>
                     </div>
                     <div class="image--area">
-                        <img src="images/about.jpg" alt="">
+                        <figure class="image--overlay">
+                            <img src="images/about.jpg" alt="me">
+                            <figcaption>
+                                <h6>Elene Kvirikashvili</h6>
+                                <p>Front End Developer</p>
+                                <ul class="about__list">
+                                    <li class="list__item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="list__item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                                    <li class="list__item"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="list__item"><a href=""><i class="fab fa-pinterest"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <div class="skills--area"></div>
+                    <div class="skills--area">
+                        <h3>skills</h3>
+                        <div class="skills--wrap">                         
+                            <div class="skills__item"><span>JavaScript</span></div>
+                            <div class="skills__item"><span>SCSS</span></div>
+                            <div class="skills__item"><span>Photoshop</span></div>
+                            <div class="skills__item"><span>SQL</span></div>
+                            <div class="skills__item"><span>Jquery</span></div>
+                            <div class="skills__item"><span>Bootstrap</span></div>
+                            <div class="skills__item"><span>HTML</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about me -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="portfolio--wrap">
+                    <div class="portfolio__title">
+                        <h2>portfolio</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis accusamus unde eum voluptas aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus distinctio aperiam error rem autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis inventore, tempore labore sequi possimus ex cum nesciunt ea dolor placeat minima rem quis tenetur.</p>
+                    </div>
+                    <div class="portfolio__gallery">
+                        <div class="portfolio__gallery--wrap">
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-1.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-2.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-3.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-4.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-5.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-6.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-8.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-7.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="image--overlay">
+                                <img src="images/portfolio9-9.jpg" alt="">
+                                <figcaption>
+                                    <div class="image__inner">
+                                        <h6>Item here</h6>
+                                        <p>Create magic with your own Hands!!!</p>
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of the portfolio -->
+        <section id="fun-facts">
+            <div class="container">
+                <div class="fun-facts--wrap">
+                    <div class="fun-facts__item">
+                        <i class="far fa-laugh-beam"></i>
+                        <p class="numbers">
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="2642519073">1</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="5207186394">5</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--3" data-fake="3363952107">0</span></span>
+                        </p>
+                        <p class="description">HAPPY CLIENTS</p>
+                    </div>
+                    <div class="fun-facts__item">
+                        <i class="fas fa-code"></i>
+                        <p class="numbers">
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="8642519073">1</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="9207186394">7</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">0</span></span>
+                        </p>
+                        <p class="description">LINES WRITTEN</p>
+                    </div>
+                    <div class="fun-facts__item">
+                        <i class="fas fa-gift"></i>
+                        <p class="numbers">
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="6642519073">1</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="5207186394">8</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--3" data-fake="4495216407">7</span></span>
+                        </p>
+                        <p class="description">HAPPY CLIENTS</p>
+                    </div>
+                    <div class="fun-facts__item">
+                        <i class="fas fa-coffee"></i>
+                        <p class="numbers">
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--1" data-fake="8642519073">3</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--2" data-fake="5207186394">5</span></span>
+                            <span class="numbers__window"><span class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">0</span></span>
+                        </p>
+                        <p class="description">CUP OF COFFEE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of the funfacts -->
+        <section id="our-team">
+            <div class="our-team__bg">
+                <div class="container">
+                    <div class="our-team--wrap">
+                        <div class="our-team__title">
+                            <h2>our team</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates cumque id odio animi dignissimos ex hic, quo veniam quaerat molestias magni error vel modi repellat quia libero magnam pariatur? Hic assumenda perspiciatis sapiente esse. Sunt tenetur cumque reprehenderit enim minima?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

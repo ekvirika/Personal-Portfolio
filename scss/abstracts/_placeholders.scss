@@ -1,38 +1,55 @@
 %header{
     text-transform: uppercase;
-    color: color(accentLight);
-    font-family: 'Libre Baskerville', cursive;
+    font-family: 'Libre Baskerville', cursive !important;
     line-height: 2em;
     text-shadow: 0px 2px 2px rgba(189, 189, 189, 0.5);
 }
 %button--pink{
-    width: 140px;
-    height: 50px;
+    width: 140px !important;
+    height: 50px !important;
     color: color(primary);
     background: color(accentLight);
     border: none;
     padding: 10px;
     text-transform: uppercase;
     font-family: 'Libre Baskerville', serif;
-    margin: 30px 0;
+    margin: 40px auto;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.8s;
-    &:hover{
-        @extend %button--grey;
-        border: 0.5px solid color(accentLight) !important;
-        background: transparent;
-        box-shadow: 0px 10px 15px  rgba(248, 197, 197, 0.5);
-        transform: scale(1.1);
-    }
 }
 %button--grey{
-    width: 140px;
-    height: 50px;
+    width: 140px !important;
+    height: 50px !important;
     color: color(accentLight);
     background: color(primary);
     border: none;
     padding: 10px;
     text-transform: uppercase;
     font-family: 'Libre Baskerville', serif;
-    margin: 30px 0;
-
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.8s;
+    margin: 40px auto;
+}
+%skills__item{
+    background: color(accentLight);
+    height: 40px;
+    position: relative;
+    transition: all ease-in-out 0.7s; 
+    span{
+        opacity: 0;
+        font-weight: 900;
+        position: relative;
+        color: color(primary);
+        font-size: 24px;
+    }
+    &:hover{
+        border: 1px solid color(primaryLight);
+        transform: scale(1.1);
+        box-shadow: 0px 5px 10px rgba(189, 189, 189, 0.5);
+    }
+    &:hover span{
+        opacity: 1;
+        animation-name: moveRight;
+        animation-delay: 0.2s;
+        animation-duration: 3s;
+        animation-direction: alternate;
+    }
 }

@@ -1,4 +1,10 @@
-
+@mixin grid__col-4 ($col: 1fr 1fr 1fr 1fr, $responsive: 1fr 1fr){
+    display: grid;
+    grid-template-columns: $col;
+    @media only screen and (max-width: 960px){
+        grid-template-columns: $responsive;
+    }
+}
 @mixin grid__col-3 ($col: 1fr 1fr 1fr, $responsive: 1fr){
     display: grid;
     grid-template-columns: $col;
@@ -33,4 +39,15 @@
     display: $flex;
     justify-content: $align;
     flex-wrap: $wrap;   
+}
+@keyframes moveRight{
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: -300px;
+    }
+}
+@keyframes counting {
+    100% { transform: translate3d(0, -(1em * 10), 0) }
 }

@@ -1,6 +1,22 @@
 .header__button{
     @extend %button--pink;
+    &:hover{
+        @extend %button--grey;
+        border: 0.5px solid color(accentLight) !important;
+        background: transparent;
+        box-shadow: 0px 5px 15px  rgba(248, 197, 197, 0.5),
+                    10px 0px 30px rgba(248, 197, 197, 0.712);
+        transform: scale(1.1);
+    }
 }
 .about__button{
-    @extend %button--grey;
+    @extend %button--grey;;
+    &:hover{
+        @extend %button--pink;
+        border: 0.5px solid color(accentLight) !important;
+        background: transparent;
+        box-shadow: 0px 10px 15px  rgba(82, 82, 82, 0.5),
+                    10px 10px 50px rgba(117, 117, 117, 0.616);
+        transform: scale(1.1);
+    }
 }
