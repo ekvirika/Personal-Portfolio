@@ -122,6 +122,7 @@
 
 #portfolio{
     background: color(primary);
+    text-align: center;
     .portfolio--wrap{
         @include flex__space-between;
         flex-direction: column;
@@ -209,7 +210,7 @@
 #fun-facts{
     background: color(accentLight);
     color: color(primary);
-    height: 270px;
+    height: 280px;
     .fun-facts--wrap{
         @include grid__col-4;
         grid-gap: 15px;
@@ -262,17 +263,136 @@
 }
 
 #our-team{
-    background: rgba(0, 0, 0, 0.486);
-    z-index: -1;
+   background-image: url(../images/ourteam_bg.png);
+   z-index: -2;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   filter: blur(0.2px);
+   opacity: 0.8;
     .our-team__bg{
-        background-image: url(../images/ourteam_bg.png);
-        opacity: 0.8;
-        z-index: -2;
-        widows: 100%;
-        height: 100%;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        
+       background: rgba(0, 0, 0, 0.76);
+        z-index: -1; 
+        width: 100%;
+        height: 100%; 
+        .our-team__title{
+            text-align: center;
+            padding: 50px 0;
+            h2{
+                color: color(accentLight);
+            }
+        }
+        .our-team__gallery{
+            padding-bottom: 40px;
+            &__wrap{
+                @include grid__col-3;
+                .team--member{
+                    overflow: hidden;
+                    .image--overlay{
+                        perspective: 800px;
+                        transform: translateZ(0) translateY(15%);
+                        position: relative;
+                        height: 380px;
+                        overflow: hidden;
+                        width: 250px;
+                        transition:   0.4s;
+                        transform-style: preserve-3d;
+                        img {
+                            transform: translateZ(0);
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            vertical-align: top;
+                            transition:   0.5s ;
+                            backface-visibility: hidden;
+                        }
+                        figcaption {
+                            opacity: 0;
+                            transform: rotateY(90deg);
+		                    transform-origin: 50% 0%;
+                            position: absolute relative;
+                            text-align: center;
+                            background: color(primary);
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            place-items: center;
+                            align-items: center;
+                            flex-direction: column;
+                            transition:  0.5s;
+                            backface-visibility: hidden;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 50%;
+                                background: rgba(63, 63, 63, 0.616);
+                                z-index: -1;
+                            }
+                            h6{
+                                margin: 50px 0;
+                                color: color(accentLight);
+                                font-size: 26px;
+                            }
+                        }
+                        &:hover {
+                            
+                            img {
+                                opacity: 0;
+                                transform: rotateY(-180deg);
+                            }
+                            figcaption {
+                                opacity: 1;
+                                transform: rotateY(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#contact{
+    .contact--wrap{
+        @include flex__centered;
+        flex-direction: column;
+        position: relative;
+        place-items: center;
+        margin: 40px 0;
+        .contact__form{
+            background: rgba(0, 0, 0, 0.76);
+            width: 400px;
+            padding: 40px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+            border-radius: 10px;
+            .input__box{
+                position: relative;
+                input{
+                    outline: none;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid color(accentLight);
+                    padding: 20px 0;
+                    width: 100%;
+                    position: relative;
+                    &:focus ~.label, &:valid ~.label{
+                        top: -12px ;
+                        left: 0;
+                        color: color(accentLight);
+                        font-size: 14px;
+                    }
+                }
+                .label{
+                    position: absolute;
+                    top:0px ;
+                    left: 0;
+                    padding: 15px 0;
+                    pointer-events: none;
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
     }
 }

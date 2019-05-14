@@ -1,0 +1,70 @@
+@import "../abstracts/colors";
+@import "../abstracts/mixins";
+@import "../abstracts/placeholders";
+@import "../abstracts/functions";
+@import "../abstracts/helpers";
+
+@import "../components/buttons";
+@import "../components/lists";
+
+footer{
+    background: color(primary);
+    text-align: center;
+    .footer--wrap{
+        @include flex__space-around;
+        flex-direction: column;
+        .logo__area{
+            margin: 30px auto;
+            img{
+                height: 80px;
+                width: 80px;
+                cursor: pointer;
+            }
+        }
+        .footer__actions--wrap{
+            @include grid__col-2;
+            margin: 0 auto;
+            color: color(accentLight);
+            .footer__menu, .footer__social--area{
+                margin: 40px auto;
+                
+                .footer__menu--top{
+                    height: 100px;
+                    width: 100px;
+                    margin: 0 auto;
+                    .menu--top{
+                        border: 1px solid ;
+                        height: 40px;
+                        width: 40px;
+                        place-items: center;
+                        transform: rotate(45deg);                        display: flex;
+                        text-align: center;
+                        transition : 0.5s;
+                        position: relative;
+                        margin: 0 auto;
+                        i{
+                            transform: rotate(-45deg);
+                            text-align: center;
+                            transition : 0.5s;
+                            font-size: 20px;
+                            position: absolute;
+                            top: 25%;
+                            left: 25%;
+                        }
+                        &:hover {
+                            transform: scale(1.5) rotate(-45deg);
+                            box-shadow: 0px 5px 15px  rgba(248, 197, 197, 0.5),
+                                        10px 0px 30px rgba(248, 197, 197, 0.712);
+                        }
+                         &:hover i {
+                            transform: rotate(45deg);
+                          }
+                      }
+                }
+                .footer__menu--bottom{
+                    margin: 25px 0 0 0;
+                }
+            }
+        }
+    }
+}

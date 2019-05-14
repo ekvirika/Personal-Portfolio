@@ -46,3 +46,7 @@ h3{
     font-size: 32px;
     color: color(primarySecond);
 }
+h5{
+    @extend %header;
+    font-size: 24px;
+}
