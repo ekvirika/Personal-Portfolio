@@ -154,6 +154,8 @@
                         transform-origin: 50% 50%;
                         transform: scale(1);
                         object-position: center;
+                        object-fit: cover;
+                        height: 876px;
                     }
                     figcaption{
                         transform: scale(.5);
